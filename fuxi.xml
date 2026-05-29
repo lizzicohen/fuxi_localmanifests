@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+ <!-- Remotes -->
+ <remote name="los" fetch="https://github.com/LineageOS" />
+ <remote name="pixelos" fetch="https://github.com/PixelOS-Fuxi" revision="sixteen-qpr1" />
+ <remote name="muppets" fetch="https://github.com/TheMuppets" revision="lineage-23.2" />
+ <remote name="lizzi" fetch="https://github.com/lizzicohen" revision="lineage-23.2" />
+
+
+ <!-- Projects -->
+ <!-- Hardware Xiaomi -->
+ <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="los" revision="lineage-23.2" clone-depth="1" />
+ 
+ <project name="android_device_xiaomi_sm8550-common" path="device/xiaomi/sm8550-common" remote="lizzi"  revision="lineage-23.2" clone-depth="1" />
+ <project name="android_device_xiaomi_fuxi" path="device/xiaomi/fuxi" remote="lizzi" revision="lineage-23.2" clone-depth="1" />
+
+ <!-- Vendor Trees -->
+ <project path="vendor/xiaomi/fuxi" name="proprietary_vendor_xiaomi_fuxi" remote="muppets" revision="lineage-23.2" clone-depth="1" />
+ <project path="vendor/xiaomi/sm8550-common" name="proprietary_vendor_xiaomi_sm8550-common" remote="muppets" clone-depth="1" />
+
+ <!-- Kernel -->
+ <project path="kernel/xiaomi/sm8550" name="android_kernel_xiaomi_sm8550" remote="lizzi" revision="next-susfs" clone-depth="1" />
+ <project name="android_kernel_xiaomi_sm8550-modules" path="kernel/xiaomi/sm8550-modules" remote="los" revision="lineage-23.2" clone-depth="1" />
+ <project name="android_kernel_xiaomi_sm8550-devicetrees" path="kernel/xiaomi/sm8550-devicetrees" remote="lizzi" revision="lineage-23.2" clone-depth="1" />
+
+ <!-- Camera Trees -->
+ <project path="vendor/xiaomi/camera" name="vendor_xiaomi_camera" remote="pixelos" revision="sixteen-qpr2" clone-depth="1" />
+</manifest>
