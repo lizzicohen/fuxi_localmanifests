@@ -22,7 +22,7 @@
  <!-- Kernel -->
  <project path="kernel/xiaomi/sm8550" name="android_kernel_xiaomi_sm8550" remote="lizzi" revision="lineage-24.0" clone-depth="1" />
  <project name="android_kernel_xiaomi_sm8550-modules" path="kernel/xiaomi/sm8550-modules" remote="los" revision="lineage-24.0" clone-depth="1" />
- <project name="android_kernel_xiaomi_sm8550-devicetrees" path="kernel/xiaomi/sm8550-devicetrees" remote="los" revision="lineage-24.9" clone-depth="1" />
+ <project name="android_kernel_xiaomi_sm8550-devicetrees" path="kernel/xiaomi/sm8550-devicetrees" remote="los" revision="lineage-24.0" clone-depth="1" />
 
  <!-- Dolby -->
  <project name="Akitlove/packages_apps_DolbyUI" path="packages/apps/DolbyUI" remote="github" revision="16.0" clone-depth="1" />
